@@ -1,0 +1,9 @@
+1 - Informe um número
+
+2 - Após informar o número aplique o modulo de 2
+
+3 - Após aplicar o modulo de 2 veja se o resultado tem resto
+
+4 - Caso o resultado tenha resto é IMPAR
+
+5 - Caso o resultado não tiver resto é PAR

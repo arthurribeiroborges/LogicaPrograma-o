@@ -1,0 +1,11 @@
+1 - Informe uma temperatura
+
+2 - Pegue a temperatura em celsius 
+
+3 - Agora pegue a temperatura em celsius e multiplique por 9
+
+4 - Pegue o resultado e agora divida por 5
+
+5 - Pegue o resultado da divisão e some com 32
+
+6 - Agora faça a converção de celsius para fahrenheit

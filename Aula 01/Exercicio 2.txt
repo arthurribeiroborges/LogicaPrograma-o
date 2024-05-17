@@ -1,0 +1,9 @@
+1 - Solicite a primeira nota do aluno
+
+2 - Em seguida solicite a segunda nota do aluno
+
+3 - Agora pegue a primeira nota e some com a segunda nota
+
+4 - Pegue o resultado da soma das duas notas e divida por 2
+
+5 - Após fazer o calculo da divisão , você tera o resultado da média
