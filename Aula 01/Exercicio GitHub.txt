@@ -1,0 +1,57 @@
+1-Abra o seu GitHub
+
+2-Já tem uma conta?
+ (Sim - Criar repositório no perfil)
+ (Não - Crie uma conta e faça o passo a passo abaixo)
+
+3- Já possui um repositório?
+   (Não, Crie  um repositório (Clique em file e tera a opção *New Repository*)
+   (Sim - Deseja usá-lo? 
+   (Sim - Copie o link do seu repositório)
+
+4- Copiou o link do repositório , Abra o seu Github Desktop ou GitBash
+
+GitBash ou Git Desktop para 5 usos
+
+*Git Bash Here*
+
+1-Abra o Git Bash Here em sua área de trabalho
+
+2-Use o comando: GIT clone e cole o Link do repositório que você copiou
+
+3- Você verá a pasta do repositório em sua área de trabalho
+
+4 -Adicione o arquivo X à pasta do repositório na área de trabalho.
+
+5- Abra o GIT BASH na pasta copiada e use o seguinte comando: 
+
+6 - (GIT ADD.)
+
+7 - (GIT COMMIT -M "O que você colocou na pasta ou um comentario")
+
+8 - (GIT PUSH)
+
+9- Os arquivos estão localizados no repositório Github
+
+(Por favor, não repita o conteúdo acima)
+(Sim, abra o Github e atualize a página)
+
+7 Fim.
+
+*Git Hub Desktop*
+
+1-Abra o Gitdesktop na área de trabalho
+
+2- Após colar o link do repositório, vá imediatamente até o arquivo e clone o repositório
+
+3-No seu Explorer abra a pasta Documentos e abra a pasta Repositório
+
+4-Adicione o arquivo ? à pasta do repositório no documento
+
+5 – Abra o Gitdesktop e faça commit dentro da pasta. Vá para o repositório no Gitdesktop e execute um GIT Push.
+
+6 – Feche o Gitdesktop e abra o Github
+
+7 - O arquivo ? está localizado no repositório Github
+(Não, repita acima)
+(Sim, acabou)
