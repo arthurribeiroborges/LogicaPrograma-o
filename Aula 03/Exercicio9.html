@@ -1,0 +1,12 @@
+<script>
+    let kg = parseFloat(prompt("Quantos kg de peixes voce pegou?"))
+    let multa = (kg - 50) * 4
+
+    if (kg <= 50) {
+        alert("Voce nao ira pagar multa.")
+    }
+
+    if (kg >= 50) {
+        alert("Voce devera pagar RS" + multa)
+    }
+</script>

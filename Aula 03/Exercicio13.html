@@ -1,0 +1,33 @@
+<script>
+    let estudante = prompt("Digite seu nome")
+    let nota1 = parseFloat(prompt("Digite sua primeira nota"))
+    let nota2 = parseFloat(prompt("Digite sua segunda nota"))
+    let nota3 = parseFloat(prompt("Digite sua terceira nota"))
+
+    let media = (nota1 + nota2 + nota3) /3
+
+    if (media>=8 && media<=10) {
+        alert(" O Aluno " + estudante + "tirou A")
+    }
+
+    if (media<=8 && media>=7) {
+        alert(" O Aluno " + estudante + "tirou B")
+    }
+
+    if (media<=7 && media>=6) {
+        alert(" O Aluno " + estudante + "tirou C")
+    }
+
+    if (media<=6 && media>=5) {
+        alert(" O Aluno " + estudante + "tirou D")
+    }
+
+    if (media<=5 && media>=0) {
+        alert(" O Aluno " + estudante + "tirou R")
+    }
+
+    else{
+        alert("Nota error")
+    }
+    
+</script>

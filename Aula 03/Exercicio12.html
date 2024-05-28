@@ -1,0 +1,23 @@
+<script>
+    let luz = parseFloat(prompt("Quanto voce utilizou de luz?"))
+    let pessoa = parseFloat(prompt("Coloque seu tipo de cliente: 1 para Residencia, 2 para comercio, 3 para industria."))
+
+    switch (pessoa) {
+        case 1:
+            alert("Valor da conta e " + (luz * 0.6))
+            
+            break;
+        case 2:
+            alert("Valor da conta e " + (luz * 0.48))
+            break;
+
+        case 3:
+            alert("Valor da conta e " + (luz * 1.29))
+            break;
+
+        default:
+            alert("Digite um valor valido ")
+            break;
+    }
+
+</script>

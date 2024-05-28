@@ -1,0 +1,27 @@
+<script>
+    let a = parseFloat(prompt("Defina um valor para A"))
+    let b = parseFloat(prompt("Defina um valor para B"))
+    let c = prompt("Qual operação voce deseja realizar")
+
+    switch (c) {
+        case "*":
+            alert("O resultado da multiplicacao e: " + a * b)
+            
+            break;
+        case "/":
+            if (b != 0) 
+            alert("O Resultado da divisao e: " + a / b)
+            else
+            alert("Erro , não pode divisão por zero")
+
+        case "+":
+            alert("O resultado da soma e: " + (a + b))
+
+        case "-":
+            alert("O Resultado da subtracao e: " + (a - b))
+
+        default:
+            alert("Coloque um simbolo valido")
+            break;
+    }
+</script>

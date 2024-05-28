@@ -1,0 +1,26 @@
+<script>
+    let hora = parseFloat(prompt("Voce trabalhou quantas horas?"))
+    let nivel = parseFloat(prompt("Qual seu nivel de professor?"))
+
+    let nivel1 = 12
+    let nivel2 = 17
+    let nivel3 = 25
+
+    switch (nivel) {
+        case 1: 
+        alert("Voce vai receber R$" + (nivel1 + hora))
+        break;
+
+    case 2: 
+        alert("Voce vai receber R$" + (nivel2 + hora))
+        break;
+
+        case 3: 
+        alert("Voce vai receber R$" + (nivel3 + hora))
+        break;
+
+        default:
+            alert("Este nivel nao e valido")
+            break;
+    }
+</script>
