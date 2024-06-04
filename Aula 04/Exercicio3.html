@@ -1,0 +1,33 @@
+<script>
+    let mediaSalario = 0;
+    let mediaNumeroFilhos = 0;
+    let maiorSalario = 0;
+    let percentualSalario100 = 0;
+
+    let salarioPessoaAtual = 0;
+    let filhosPessoaAtual = 0;
+    let valorSalarioPessoaAtual = 0;
+    let numeroDePessoas = 0;
+
+    do{
+        numeroDePessoas++;
+        salarioPessoaAtual = parseFloat(prompt("Digite seu salario:"))
+        filhosPessoaAtual = parseFloat(prompt("Digite quantos filhos voce tem:"))
+
+        if(salarioPessoaAtual > maiorSalario){
+            maiorSalario = salarioPessoaAtual
+        }
+
+        if(salarioPessoaAtual > 100){
+            percentualSalario100++;
+        }
+
+        mediaSalario += salarioPessoaAtual;
+        mediaNumeroFilhos += filhosPessoaAtual;
+
+    }
+
+    while(salarioPessoaAtual > 0);
+
+    alert("Media de salario da populacao: " + (mediaSalario/numeroDePessoas) + "\n Media do numero de filhos da populacao " + (mediaNumeroFilhos/numeroDePessoas) + "\n O maior salario da pupulacao: " + maiorSalario + "\n Quantidade percentual de pessoas que recebem 100R$: " + (percentualSalario100/numeroDePessoas))
+</script>
