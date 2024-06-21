@@ -1,0 +1,47 @@
+<script>
+    let menu = parseInt(prompt("Escolha seu exercicio digitando de 1 a 9."))
+
+    switch(menu){
+        case 1: 
+        exercicio1();
+
+        case 2: 
+        exercicio2();
+
+        case 3: 
+        exercicio3()
+    }
+
+    
+    function exercicio1(){
+        alert("Arthur");
+    }
+
+    function exercicio2(){
+        let meunome = "Arthurzin"
+        alert(meunome);
+    }
+
+    function exercicio3(){
+        let x = parseFloat(prompt("Digite um numero:"))
+        let y = parseFloat(prompt("Digite outro numero:"))
+
+        alert("Soma: " + somarNumeros(x,y) + "\n Subtracao " + subtrairNumeros(x,y) + "\n Multiplicacao: " + multiplicarNumeros(x,y) + "\n Divisao: " + dividirNumeros(x,y));
+    }
+
+    function somarNumeros(numero1,numero2){
+        return numero1 + numero2
+    }
+
+    function subtrairNumeros(numero1,numero2){
+        return numero1 - numero2
+    }
+
+    function multiplicarNumeros(numero1,numero2){
+        return numero1 * numero2
+    }
+
+    function dividirNumeros(numero1,numero2){
+        return numero1 / numero2
+    }
+</script>

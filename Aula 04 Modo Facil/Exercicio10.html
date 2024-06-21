@@ -1,15 +1,16 @@
 <script>
-    let A = parseInt(prompt("Informe o valor de A: "));
+    let A = parseInt(prompt("Digite um valor inicial: "));
+
     let resultado = 1;
     let sequencia = "";
 
     for (let i = A; i > 1; i--) {
     resultado *= i;
-    sequencia += i + " x ";
+    sequencia += i;
+    if (i > 2) {
+        sequencia += " X ";
+    }
     }
 
-    sequencia = sequencia.substring(0, sequencia.length - 3); // remove o último " x "
-    sequencia += " = " + resultado;
-
-    alert(A + "! = " + sequencia);
+    alert(A + "! = " + sequencia + " = " + resultado);
 </script>
