@@ -1,0 +1,19 @@
+<script>
+    let numeroClientes = parseInt(prompt("Digite o número de clientes:"));
+    let clientes = [];
+    let ClientesNegativos = 0;
+
+    for (let i = 0; i < numeroClientes; i++) {
+        let clienteconta = prompt(`Digite o número da conta do cliente ${i + 1}:`);
+        let saldo = parseFloat(prompt(`Digite o saldo do cliente ${i + 1}:`));
+        clientes.push({ clienteconta, saldo });
+        
+        if (saldo < 0) {
+            ClientesNegativos++;
+        }
+    }
+
+    alert(`Total de clientes cadastrados: ${numeroClientes}`);
+    alert(`Total de clientes com saldo negativo: ${ClientesNegativos}`);
+
+</script>

@@ -1,0 +1,16 @@
+<script>
+    let somaAlturas = 0;
+    let contadorAltos = 0;
+
+    for (let i = 0; i < 10; i++) {
+    let altura = parseFloat(prompt(`Informe a altura da pessoa ${i + 1} (em metros): `));
+    somaAlturas += altura;
+    if (altura > 2) {
+        contadorAltos++;
+    }
+    }
+
+    let mediaAlturas = somaAlturas / 10;
+    alert(`Altura média: ${mediaAlturas.toFixed(2)} metros`);
+    alert(`Número de pessoas com altura superior a 2 metros: ${contadorAltos}`);
+</script>

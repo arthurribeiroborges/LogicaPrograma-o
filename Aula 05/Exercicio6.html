@@ -1,0 +1,20 @@
+<script>
+    let altura = [];
+    let alturatotal = 0;
+    let pessoasAcimaDeDoisMetros = 0;
+
+    for (let i = 0; i < 20; i++) {
+        let altura2 = parseFloat(prompt(`Digite a altura da pessoa ${i + 1} em metros:`));
+        altura.push(altura);
+        alturatotal += altura2;
+        if (altura2 > 2) {
+            pessoasAcimaDeDoisMetros++;
+        }
+    }
+
+    let alturaMedia = alturatotal / 20;
+
+    alert(`A altura média é: ${alturaMedia.toFixed(2)} metros`);
+    alert(`O número de pessoas com altura superior a 2 metros é: ${pessoasAcimaDeDoisMetros}`);
+
+</script>

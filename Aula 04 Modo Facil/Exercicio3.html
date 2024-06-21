@@ -1,0 +1,12 @@
+<script>
+    let num = parseInt(prompt("Informe o numero para a tabuada: "));
+    let inicio = parseInt(prompt("Informe o inicio da tabuada: "));
+    let fim = parseInt(prompt("Informe o fim da tabuada: "));
+
+    for (let i = inicio; i <= fim; i++) {
+    let resultado = num * i;
+    if (resultado % 2 === 0) {
+    alert(`${num} x ${i} = ${resultado}`);
+    }
+    }
+</script>
