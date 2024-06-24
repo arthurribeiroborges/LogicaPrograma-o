@@ -1,0 +1,24 @@
+<script>
+    let valores = [];
+    let maior;
+    let menor;
+
+    for (let i = 0; i < 50; i++) {
+    let valor = parseFloat(prompt("Digite o valor " + (i + 1) + ": "));
+    valores.push(valor);
+    if (i == 0) {
+        maior = valor;
+        menor = valor;
+    } else {
+        if (valor > maior) {
+        maior = valor;
+        }
+        if (valor < menor) {
+        menor = valor;
+        }
+    }
+    }
+
+    alert("Maior valor: " + maior);
+    alert("Menor valor: " + menor);
+</script>

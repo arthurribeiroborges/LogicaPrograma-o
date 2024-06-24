@@ -1,0 +1,32 @@
+<script>
+    let codigo;
+    let precoCusto;
+    let precoNovo;
+    let somaPrecosCusto = 0;
+    let somaPrecosNovos = 0;
+    let contador = 0;
+
+    while (true) {
+    codigo = parseInt(prompt("Digite o código do produto (ou um número negativo para sair): "));
+    if (codigo < 0) break;
+    
+    precoCusto = parseFloat(prompt("Digite o preço de custo do produto: "));
+    precoNovo = precoCusto * 1.2;
+    
+    alert("Código: " + codigo + ", Preço novo: " + precoNovo.toFixed(2));
+    
+    somaPrecosCusto += precoCusto;
+    somaPrecosNovos += precoNovo;
+    contador++;
+    }
+
+    if (contador > 0) {
+    let mediaPrecosCusto = somaPrecosCusto / contador;
+    let mediaPrecosNovos = somaPrecosNovos / contador;
+    
+    alert("Média dos preços de custo: " + mediaPrecosCusto.toFixed(2));
+    alert("Média dos preços novos: " + mediaPrecosNovos.toFixed(2));
+    } else {
+    alert("Nenhum produto cadastrado.");
+    }
+</script>

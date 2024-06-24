@@ -1,0 +1,25 @@
+<script>
+    let codigo;
+    let somaNotas = 0;
+    let contador = 0;
+
+    do {
+    codigo = parseInt(prompt("Digite o codigo do aluno (ou 0 para sair): "));
+    if (codigo != 0) {
+        let nota1 = parseFloat(prompt("Digite a primeira nota do aluno: "));
+        let nota2 = parseFloat(prompt("Digite a segunda nota do aluno: "));
+        let nota3 = parseFloat(prompt("Digite a terceira nota do aluno: "));
+        let media = (nota1 + nota2 + nota3) / 3;
+        somaNotas += media;
+        contador++;
+        alert("Media do aluno " + codigo + ": " + media);
+    }
+    } while (codigo != 0);
+
+    if (contador > 0) {
+    let mediaGeral = somaNotas / contador;
+    alert("Media geral da classe: " + mediaGeral);
+    } else {
+    alert("Nenhum aluno foi cadastrado.");
+    }
+</script>

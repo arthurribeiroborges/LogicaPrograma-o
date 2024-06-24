@@ -1,0 +1,39 @@
+<script>
+    let vetor = [];
+    for (let i = 0; i < 10; i++) {
+    vetor[i] = Math.floor(Math.random() * 10) + 1;
+    }
+
+    alert("Vetor sorteado: " + vetor);
+
+    let numeroUsuario;
+    while (true) {
+    numeroUsuario = parseInt(prompt("Informe um número entre 1 e 10: "));
+    if (numeroUsuario < 1 || numeroUsuario > 10) {
+        alert("Número inválido. Tente novamente.");
+    } else {
+        break;
+    }
+    }
+
+    let existe = false;
+    let quantidade = 0;
+    let posicoes = [];
+    for (let i = 0; i < vetor.length; i++) {
+    if (vetor[i] == numeroUsuario) {
+        existe = true;
+        quantidade++;
+        posicoes.push(i + 1);
+    }
+    }
+
+    if (existe) {
+    if (quantidade == 1) {
+        alert("O número " + numeroUsuario + " está no vetor.");
+    } else {
+        alert("O número " + numeroUsuario + " está no vetor " + quantidade + " vezes, nas posições " + posicoes);
+    }
+    } else {
+    alert("O número " + numeroUsuario + " não está no vetor.");
+    }
+</script>

@@ -1,0 +1,59 @@
+<script>
+    let totalPessoas = 0;
+let homens = 0;
+let mulheres = 0;
+let olhosAzuis = 0;
+let olhosVerdes = 0;
+let olhosCastanhos = 0;
+let cabelosLouros = 0;
+let cabelosCastanhos = 0;
+let cabelosPretos = 0;
+let somaIdades = 0;
+let maiorIdade = 0;
+let menorIdade = -1;
+
+let sexo;
+let corOlhos;
+let corCabelos;
+let idade;
+
+do {
+  sexo = prompt("Digite o sexo (M/F): ");
+  corOlhos = prompt("Digite a cor dos olhos (A/V/C): ");
+  corCabelos = prompt("Digite a cor dos cabelos (L/C/P): ");
+  idade = parseInt(prompt("Digite a idade (ou um valor negativo para sair): "));
+  if (idade < 0) break;
+  
+  totalPessoas++;
+  
+  if (sexo.toUpperCase() == "M") homens++;
+  else mulheres++;
+  
+  switch (corOlhos.toUpperCase()) {
+    case "A": olhosAzuis++; break;
+    case "V": olhosVerdes++; break;
+    case "C": olhosCastanhos++; break;
+  }
+  
+  switch (corCabelos.toUpperCase()) {
+    case "L": cabelosLouros++; break;
+    case "C": cabelosCastanhos++; break;
+    case "P": cabelosPretos++; break;
+  }
+  
+  somaIdades += idade;
+  
+  if (idade > maiorIdade) maiorIdade = idade;
+  if (menorIdade == -1 || idade < menorIdade) menorIdade = idade;
+  
+} while (true);
+
+let mediaIdade = somaIdades / totalPessoas;
+
+alert("a) Total de pessoas: " + totalPessoas);
+alert("b) Homens: " + homens + ", Mulheres: " + mulheres);
+alert("c) Olhos Azuis: " + olhosAzuis + ", Olhos Verdes: " + olhosVerdes + ", Olhos Castanhos: " + olhosCastanhos);
+alert("d) Cabelos Louros: " + cabelosLouros + ", Cabelos Castanhos: " + cabelosCastanhos + ", Cabelos Pretos: " + cabelosPretos);
+alert("e) Media de idade: " + mediaIdade.toFixed(2));
+alert("f) Maior idade: " + maiorIdade + ", Menor idade: " + menorIdade);
+</script>

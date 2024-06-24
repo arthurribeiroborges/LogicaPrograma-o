@@ -1,0 +1,15 @@
+<script>
+    let soma = 0;
+    let par = prompt("Digite um par de valores m,n (ou 'fim' para terminar): ");
+    while (par!= 'fim') {
+    let valores = par.split(',');
+    let m = parseInt(valores[0]);
+    let n = parseInt(valores[1]);
+    soma = 0;
+    for (let i = m; i < m + n; i++) {
+        soma += i;
+    }
+    alert("A soma dos " + n + " inteiros consecutivos a partir de " + m + " e: " + soma);
+    par = prompt("Digite um par de valores m,n (ou 'fim' para terminar): ");
+    }
+</script>

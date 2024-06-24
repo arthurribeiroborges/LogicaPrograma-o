@@ -1,20 +1,23 @@
 <script>
-    let altura = [];
-    let alturatotal = 0;
-    let pessoasAcimaDeDoisMetros = 0;
-
+    let alturaPessoas = [];
     for (let i = 0; i < 20; i++) {
-        let altura2 = parseFloat(prompt(`Digite a altura da pessoa ${i + 1} em metros:`));
-        altura.push(altura);
-        alturatotal += altura2;
-        if (altura2 > 2) {
-            pessoasAcimaDeDoisMetros++;
-        }
+    let altura = parseFloat(prompt("Informe a altura da pessoa " + (i + 1) + ":"));
+    alturaPessoas.push(altura);
     }
 
-    let alturaMedia = alturatotal / 20;
+    let somaAlturas = 0;
+    for (let i = 0; i < alturaPessoas.length; i++) {
+    somaAlturas += alturaPessoas[i];
+    }
 
-    alert(`A altura média é: ${alturaMedia.toFixed(2)} metros`);
-    alert(`O número de pessoas com altura superior a 2 metros é: ${pessoasAcimaDeDoisMetros}`);
+    let mediaAltura = somaAlturas / alturaPessoas.length;
+    alert("A altura média é: " + mediaAltura.toFixed(2) + " metros");
 
+    let pessoasAcima2m = 0;
+    for (let i = 0; i < alturaPessoas.length; i++) {
+    if (alturaPessoas[i] > 2) {
+        pessoasAcima2m++;
+    }
+    }
+    alert("O número de pessoas com altura superior a 2 metros é: " + pessoasAcima2m);
 </script>

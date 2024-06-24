@@ -1,0 +1,17 @@
+<script>
+    let linha = 0;
+    let tabela = "Valor       Quadrado     Cubo       Raiz Quadrada\n";
+
+    while (true) {
+    let valor = parseFloat(prompt("Digite um valor (ou negativo para sair): "));
+    if (valor < 0) break;
+    let quadrado = valor * valor;
+    let cubo = valor * valor * valor;
+    let raizQuadrada = Math.sqrt(valor);
+    tabela += valor.toFixed(2) + "       " + quadrado.toFixed(2) + "       " + cubo.toFixed(2) + "       " + raizQuadrada.toFixed(2) + "\n";
+    linha++;
+    if (linha % 20 == 0) tabela += "Valor       Quadrado     Cubo       Raiz Quadrada\n";
+    }
+
+    alert(tabela);
+</script>

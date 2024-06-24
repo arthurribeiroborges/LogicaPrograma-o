@@ -1,0 +1,30 @@
+<script>
+    let quantidadePares = 0;
+    let somaPares = 0;
+    let quantidadeImpares = 0;
+    let somaGeral = 0;
+    let contador = 0;
+
+    let numero;
+    while ((numero = parseInt(prompt("Digite um numero positivo (ou 0 para sair): "))) != 0) {
+    contador++;
+    somaGeral += numero;
+    if (numero % 2 == 0) {
+        quantidadePares++;
+        somaPares += numero;
+    } else {
+        quantidadeImpares++;
+    }
+    }
+
+    if (contador > 0) {
+    let mediaPares = somaPares / quantidadePares;
+    let mediaGeral = somaGeral / contador;
+    alert("Quantidade de numeros pares: " + quantidadePares);
+    alert("Quantidade de numeros impares: " + quantidadeImpares);
+    alert("Media dos valores pares: " + mediaPares);
+    alert("Media geral dos numeros lidos: " + mediaGeral);
+    } else {
+    alert("Nenhum numero foi lido.");
+    }
+</script>

@@ -1,0 +1,24 @@
+<script>
+    let soma = 0;
+    let contador = 0;
+
+    while (true) {
+    let valor = parseInt(prompt("Digite um valor inteiro (ou 0 para sair): "));
+    if (valor == 0) {
+        break;
+    }
+    if (valor >= 13 && valor <= 73) {
+        soma += valor;
+        contador++;
+    } else {
+        alert("Valor invalido. Digite um valor entre 13 e 73.");
+    }
+    }
+
+    if (contador == 0) {
+    alert("Nenhum valor valido foi digitado.");
+    } else {
+    let media = soma / contador;
+    alert("Media aritmética: " + media.toFixed(2));
+    }
+</script>

@@ -1,0 +1,29 @@
+<script>
+    let codigo;
+    let nota1, nota2, nota3;
+    let media;
+
+    do {
+    codigo = parseInt(prompt("Digite o código do aluno (ou um número negativo para sair): "));
+    if (codigo < 0) break;
+
+    nota1 = parseFloat(prompt("Digite a primeira nota do aluno: "));
+    nota2 = parseFloat(prompt("Digite a segunda nota do aluno: "));
+    nota3 = parseFloat(prompt("Digite a terceira nota do aluno: "));
+
+    let notas = [nota1, nota2, nota3];
+    notas.sort((a, b) => b - a);
+
+    media = (notas[0] * 4 + notas[1] * 3 + notas[2] * 3) / 10;
+
+    alert("Código do aluno: " + codigo);
+    alert("Notas: " + nota1 + ", " + nota2 + ", " + nota3);
+    alert("Média: " + media.toFixed(2));
+
+    if (media >= 5) {
+        alert("APROVADO");
+    } else {
+        alert("REPROVADO");
+    }
+    } while (true);
+</script>

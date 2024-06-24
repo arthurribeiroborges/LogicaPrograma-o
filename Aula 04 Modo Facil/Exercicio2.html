@@ -3,7 +3,11 @@
     let inicio = parseInt(prompt("Informe o inicio da tabuada: "));
     let fim = parseInt(prompt("Informe o fim da tabuada: "));
 
+    let resultado = "";
+
     for (let i = inicio; i <= fim; i++) {
-    alert(`${num} x ${i} = ${num * i}`);
+    resultado += num + " x " + i + " = " + (num * i) + "\n";
     }
+
+    alert(resultado);
 </script>

@@ -1,26 +1,22 @@
 <script>
+  let bandas = [];
+
+  for (let i = 0; i < 5; i++) {
     let banda = {};
+    banda.nome = prompt("Informe o nome da banda " + (i + 1) + ": ");
+    banda.tipoMusica = prompt("Informe o tipo de música da banda " + (i + 1) + ": ");
+    banda.integrantes = parseInt(prompt("Informe o número de integrantes da banda " + (i + 1) + ": "));
+    banda.ranking = parseInt(prompt("Informe o ranking da banda " + (i + 1) + " (1-5): "));
+    bandas.push(banda);
+  }
 
-for (let i = 0; i < 5; i++) {
-  banda[i] = {
-    nome: "",
-    tipoDeMusica: "",
-    numeroDeIntegrantes: 0,
-    ranking: 0
-  };
-
-  banda[i].nome = prompt("Digite o nome da banda " + (i + 1) + ":");
-  banda[i].tipoDeMusica = prompt("Digite o tipo de música da banda " + (i + 1) + ":");
-  banda[i].numeroDeIntegrantes = parseInt(prompt("Digite o número de integrantes da banda " + (i + 1) + ":"));
-  banda[i].ranking = parseInt(prompt("Digite o ranking da banda " + (i + 1) + " (1-5):"));
-}
-
-for (let i = 0; i < 5; i++) {
-  alert("Banda " + (i + 1) + ":");
-  alert("Nome: " + banda[i].nome);
-  alert("Tipo de música: " + banda[i].tipoDeMusica);
-  alert("Número de integrantes: " + banda[i].numeroDeIntegrantes);
-  alert("Ranking: " + banda[i].ranking);
-  alert("------------");
-}
+  alert("Informações das bandas:");
+  for (let i = 0; i < bandas.length; i++) {
+    alert("Banda " + (i + 1) + ":");
+    alert("Nome: " + bandas[i].nome);
+    alert("Tipo de música: " + bandas[i].tipoMusica);
+    alert("Número de integrantes: " + bandas[i].integrantes);
+    alert("Ranking: " + bandas[i].ranking);
+    alert("--------------------");
+  }
 </script>

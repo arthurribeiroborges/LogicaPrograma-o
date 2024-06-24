@@ -1,0 +1,21 @@
+<script>
+    let n = parseInt(prompt("Digite um valor inteiro e positivo: "));
+    while (n <= 0) {
+    n = parseInt(prompt("Valor invalido. Digite um valor inteiro e positivo: "));
+    }
+
+    let S = 0;
+    let termo = "";
+
+    for (let i = 1; i <= n; i++) {
+    let fração = 1 / i;
+    S += fração;
+    termo += " + 1/" + i;
+    if (i < n) {
+        termo += " ";
+    }
+    }
+
+    alert("Soma: 1" + termo);
+    alert("Valor final de S: " + S.toFixed(4));
+</script>

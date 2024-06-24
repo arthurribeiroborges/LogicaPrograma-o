@@ -1,0 +1,12 @@
+<script>
+    let somaNegativos = 0;
+
+    let numero;
+    while ((numero = parseInt(prompt("Digite um numero inteiro (ou 0 para sair): "))) != 0) {
+    if (numero < 0) {
+        somaNegativos += numero;
+    }
+    }
+
+    alert("Somatorio dos numeros negativos: " + somaNegativos);
+</script>

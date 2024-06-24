@@ -1,0 +1,20 @@
+<script>
+    let intervalo1 = 0;
+    let intervalo2 = 0;
+    let intervalo3 = 0;
+    let intervalo4 = 0;
+
+    while (true) {
+    let numero = parseFloat(prompt("Digite um numero (ou negativo para sair): "));
+    if (numero < 0) break;
+    if (numero <= 25) intervalo1++;
+    else if (numero <= 50) intervalo2++;
+    else if (numero <= 75) intervalo3++;
+    else if (numero <= 100) intervalo4++;
+    }
+
+    alert("Intervalo [0,25]: " + intervalo1);
+    alert("Intervalo [26,50]: " + intervalo2);
+    alert("Intervalo [51,75]: " + intervalo3);
+    alert("Intervalo [76,100]: " + intervalo4);
+</script>

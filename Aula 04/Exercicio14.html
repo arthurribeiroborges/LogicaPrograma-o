@@ -1,0 +1,25 @@
+<script>
+    let valores = [];
+    let soma = 0;
+    let positivos = 0;
+    let negativos = 0;
+
+    while (true) {
+    let valor = parseInt(prompt("Digite um valor (ou 0 para sair): "));
+    if (valor == 0) break;
+    valores.push(valor);
+    soma += valor;
+    if (valor > 0) positivos++;
+    if (valor < 0) negativos++;
+    }
+
+    let media = soma / valores.length;
+    let percentualPositivos = (positivos / valores.length) * 100;
+    let percentualNegativos = (negativos / valores.length) * 100;
+
+    alert("Média aritmética: " + media);
+    alert("Quantidade de valores positivos: " + positivos);
+    alert("Quantidade de valores negativos: " + negativos);
+    alert("Percentual de valores positivos: " + percentualPositivos + "%");
+    alert("Percentual de valores negativos: " + percentualNegativos + "%");
+</script>

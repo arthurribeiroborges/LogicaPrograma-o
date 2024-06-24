@@ -1,4 +1,13 @@
 <script>
-    const x = 10;
-    x = 20;
+    let chicoAltura = 1.50;
+    let zeAltura = 1.10;
+    let anos = 0;
+
+    while (zeAltura <= chicoAltura) {
+    chicoAltura += 0.02;
+    zeAltura += 0.03;
+    anos++;
+    }
+
+    alert("Serão necessários " + anos + " anos para que Ze seja maior que Chico.");
 </script>

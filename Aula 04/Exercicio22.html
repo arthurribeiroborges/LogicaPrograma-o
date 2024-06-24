@@ -1,0 +1,34 @@
+<script>
+   let somaSalarios = 0;
+    let contadorPessoas = 0;
+    let maiorIdade = 0;
+    let menorIdade = -1;
+    let mulheres100 = 0;
+
+    let idade;
+    let sexo;
+    let salario;
+
+    do {
+    idade = parseInt(prompt("Digite a idade (ou um valor negativo para sair): "));
+    if (idade < 0) break;
+    
+    sexo = prompt("Digite o sexo (M/F): ");
+    salario = parseFloat(prompt("Digite o salario: "));
+    
+    somaSalarios += salario;
+    contadorPessoas++;
+    
+    if (menorIdade == -1 || idade < menorIdade) menorIdade = idade;
+    if (idade > maiorIdade) maiorIdade = idade;
+    
+    if (sexo.toUpperCase() == "F" && salario <= 100) mulheres100++;
+    
+    } while (true);
+
+    let mediaSalario = somaSalarios / contadorPessoas;
+
+    alert("a) Media de salario do grupo: " + mediaSalario.toFixed(2));
+    alert("b) Maior idade do grupo: " + maiorIdade + ", menor idade do grupo: " + menorIdade);
+    alert("c) Quantidade de mulheres com salario ate R$100,00: " + mulheres100);
+</script>

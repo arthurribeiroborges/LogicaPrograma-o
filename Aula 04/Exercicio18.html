@@ -1,0 +1,26 @@
+<script>
+    let m;
+    while (m = parseInt(prompt("Digite um numero inteiro e positivo: "))) {
+    if (m % 2 == 0) {
+        let divisores = 0;
+        for (let i = 1; i <= m; i++) {
+        if (m % i == 0) {
+            divisores++;
+        }
+        }
+        alert("O numero " + m + " tem " + divisores + " divisores.");
+    } else if (m < 10) {
+        let fatorial = 1;
+        for (let i = 1; i <= m; i++) {
+        fatorial *= i;
+        }
+        alert("O fatorial de " + m + " e " + fatorial + ".");
+    } else {
+        let soma = 0;
+        for (let i = 1; i <= m; i++) {
+        soma += i;
+        }
+        alert("A soma dos inteiros de 1 ate " + m + " e " + soma + ".");
+    }
+    }
+</script>

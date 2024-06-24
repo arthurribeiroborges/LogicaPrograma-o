@@ -1,11 +1,11 @@
 <script>
     let vezes = parseInt(prompt("Informe quantas vezes voce deseja lancar o dado: "));
 
-    let resultados = [];
+    let resultado = "";
     for (let i = 0; i < vezes; i++) {
-    let resultado = Math.floor(Math.random() * 6) + 1;
-    resultados.push(resultado);
+    let numero = Math.floor(Math.random() * 6) + 1;
+    resultado += "Lancamento " + (i + 1) + ": " + numero + "\n";
     }
 
-    alert(`Resultados dos lançamentos do dado: ${resultados.join(", ")}`);
+    alert(resultado);
 </script>

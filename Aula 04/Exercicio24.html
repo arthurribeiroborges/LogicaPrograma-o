@@ -1,0 +1,26 @@
+<script>
+    let maiorIdade = 0;
+    let mulheresVerdesLouros = 0;
+
+    let sexo;
+    let corOlhos;
+    let corCabelos;
+    let idade;
+
+    do {
+    idade = parseInt(prompt("Digite a idade (ou um valor negativo para sair): "));
+    if (idade < 0) break;
+    
+    sexo = prompt("Digite o sexo (M/F): ");
+    corOlhos = prompt("Digite a cor dos olhos (Azul/Verde/Castanha): ");
+    corCabelos = prompt("Digite a cor dos cabelos (Loiro/Castanho/Preto): ");
+    
+    if (idade > maiorIdade) maiorIdade = idade;
+    
+    if (sexo.toUpperCase() == "F" && idade >= 18 && idade <= 35 && corOlhos.toUpperCase() == "V" && corCabelos.toUpperCase() == "L") mulheresVerdesLouros++;
+    
+    } while (true);
+
+    alert("a) Maior idade dos habitantes: " + maiorIdade);
+    alert("b) Quantidade de mulheres com olhos verdes e cabelos louros entre 18 e 35 anos: " + mulheresVerdesLouros);
+</script>

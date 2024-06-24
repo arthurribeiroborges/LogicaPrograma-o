@@ -1,0 +1,34 @@
+<script>
+    let voto;
+    let candidato1 = 0;
+    let candidato2 = 0;
+    let candidato3 = 0;
+    let candidato4 = 0;
+    let votoNulo = 0;
+    let votoBranco = 0;
+
+    do {
+    voto = parseInt(prompt("Digite o código do voto (1, 2, 3, 4, 5, 6 ou 0 para finalizar): "));
+    if (voto == 1) {
+        candidato1++;
+    } else if (voto == 2) {
+        candidato2++;
+    } else if (voto == 3) {
+        candidato3++;
+    } else if (voto == 4) {
+        candidato4++;
+    } else if (voto == 5) {
+        votoNulo++;
+    } else if (voto == 6) {
+        votoBranco++;
+    }
+    } while (voto!= 0);
+
+    alert("Total de votos para cada candidato:");
+    alert("Candidato 1: " + candidato1);
+    alert("Candidato 2: " + candidato2);
+    alert("Candidato 3: " + candidato3);
+    alert("Candidato 4: " + candidato4);
+    alert("Total de votos nulos: " + votoNulo);
+    alert("Total de votos em branco: " + votoBranco);
+</script>

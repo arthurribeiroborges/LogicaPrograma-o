@@ -1,0 +1,12 @@
+<script>
+    let produtoPares = 1;
+
+    let numero;
+    while ((numero = parseInt(prompt("Digite um numero inteiro e positivo (ou 0 para sair): "))) != 0) {
+    if (numero > 0 && numero % 2 == 0) {
+        produtoPares *= numero;
+    }
+    }
+
+    alert("Produtorio dos numeros pares: " + produtoPares);
+</script>

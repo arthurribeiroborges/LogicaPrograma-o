@@ -1,0 +1,22 @@
+<script>
+    let numero;
+    let somaPares = 0;
+    let contadorPares = 0;
+
+    do {
+    numero = parseInt(prompt("Digite um número (ou 0 para sair): "));
+    if (numero!= 0) {
+        if (numero % 2 == 0) {
+        somaPares += numero;
+        contadorPares++;
+        }
+    }
+    } while (numero!= 0);
+
+    if (contadorPares > 0) {
+    let mediaPares = somaPares / contadorPares;
+    alert("Média dos números pares: " + mediaPares);
+    } else {
+    alert("Nenhum número par foi digitado.");
+    }
+</script>

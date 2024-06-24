@@ -1,0 +1,32 @@
+<script>
+     let maior = 0;
+    let menor = 0;
+    let soma = 0;
+
+    for (let i = 0; i < 500; i++) {
+    let valor = parseInt(prompt("Digite um valor inteiro e positivo: "));
+    while (valor <= 0) {
+        valor = parseInt(prompt("Valor invalido. Digite um valor inteiro e positivo: "));
+    }
+    
+    if (i == 0) {
+        maior = valor;
+        menor = valor;
+    } else {
+        if (valor > maior) {
+        maior = valor;
+        }
+        if (valor < menor) {
+        menor = valor;
+        }
+    }
+    
+    soma += valor;
+    }
+
+    let media = soma / 500;
+
+    alert("Maior valor: " + maior);
+    alert("Menor valor: " + menor);
+    alert("Média dos valores: " + media.toFixed(2));
+</script>
