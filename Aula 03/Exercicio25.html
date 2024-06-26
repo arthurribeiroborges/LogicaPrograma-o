@@ -1,0 +1,17 @@
+<script>
+    let indicePoluicao = parseFloat(prompt("Digite o indice de poluicao medido: "));
+
+    if (indicePoluicao < 0.05 || indicePoluicao > 0.5) {
+    alert("Indice de poluicao invalido. Deve estar entre 0.05 e 0.5.");
+    } else {
+    if (indicePoluicao >= 0.5) {
+        alert("Todos os 3 grupos de industrias devem paralisar suas atividades.");
+    } else if (indicePoluicao >= 0.4) {
+        alert("Os grupos 1 e 2 de industrias devem paralisar suas atividades.");
+    } else if (indicePoluicao >= 0.3) {
+        alert("O grupo 1 de industrias deve paralisar suas atividades.");
+    } else {
+        alert("Indice de poluicao dentro dos limites aceitaveis.");
+    }
+    }
+</script>

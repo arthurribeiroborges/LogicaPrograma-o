@@ -1,0 +1,63 @@
+<script>
+    let i = parseInt(prompt("Digite o valor de i: "));
+    let a = parseFloat(prompt("Digite o valor de a: "));
+    let b = parseFloat(prompt("Digite o valor de b: "));
+    let c = parseFloat(prompt("Digite o valor de c: "));
+
+    if (i < 1 || i > 3) {
+    alert("Valor de i inválido. Deve ser 1, 2 ou 3.");
+    } else {
+    if (i == 1) {
+        
+    let temp;
+    if (a > b) {
+    temp = a;
+    a = b;
+    b = temp;
+    }
+    if (a > c) {
+    temp = a;
+    a = c;
+    c = temp;
+    }
+    if (b > c) {
+    temp = b;
+    b = c;
+    c = temp;
+    }
+    alert("Valores em ordem crescente: " + a + ", " + b + ", " + c);
+    } else if (i == 2) {
+        
+    let temp;
+    if (a < b) {
+    temp = a;
+    a = b;
+    b = temp;
+    }
+    if (a < c) {
+    temp = a;
+    a = c;
+    c = temp;
+    }
+    if (b < c) {
+    temp = b;
+    b = c;
+    c = temp;
+    }
+    alert("Valores em ordem decrescente: " + a + ", " + b + ", " + c);
+    } else if (i == 3) {
+        
+    let max = Math.max(a, b, c);
+    let min = Math.min(a, b, c);
+    let mid;
+    if (a!= max && a!= min) {
+    mid = a;
+    } else if (b!= max && b!= min) {
+    mid = b;
+    } else {
+    mid = c;
+    }
+    alert("Valores com o maior no meio: " + min + ", " + max + ", " + mid);
+    }
+    }
+</script>

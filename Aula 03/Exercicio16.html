@@ -1,0 +1,17 @@
+<script>
+    let lado1 = parseInt(prompt("Digite o primeiro lado do triangulo: "));
+    let lado2 = parseInt(prompt("Digite o segundo lado do triangulo: "));
+    let lado3 = parseInt(prompt("Digite o terceiro lado do triangulo: "));
+
+    if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
+    if (lado1 == lado2 && lado2 == lado3) {
+        alert("Triangulo Equilatero");
+    } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+        alert("Triangulo Isoscele");
+    } else {
+        alert("Triangulo Escaleno");
+    }
+    } else {
+    alert("Os lados nao formam um triangulo");
+    }
+</script>

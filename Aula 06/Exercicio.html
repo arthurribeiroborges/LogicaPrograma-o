@@ -46,6 +46,72 @@
     }
 
     function exercicio4(){
-        
+        let parametro1 = prompt("Digite seu nome:")
+        let parametro2 = prompt("Digite seu sobrenome:")
+
+        return alert( parametro1 + parametro2)
+        }
+    function exercicio5() {
+        let idade = parseInt(prompt("Digite sua idade:"));
+        if (idade >= 18 && idade < 60) {
+            alert("Voce e maior de idade")
+        } else if (idade >= 60) {
+            alert("Voce e um senhor/senhora de idade")
+        } else {
+            alert("Voce e menor de idade")
+        }
+        }
+    function exercicio6() {
+        let number = parseInt(prompt("Digite um numero"));
+        if (number % 2 == 0) {
+            alert("Numero par")
+        } else {
+            alert("Numero impar")
+        }
+        }
+    function exercicio7() {
+
+    let number = parseInt(prompt("Digite um numero"));
+    let resultado = ""
+    for (let x = 0; x <= number; x++) {
+    resultado += ("\n" + x);
     }
+
+    alert(resultado)
+    }
+
+    function exercicio8() {
+        let idade = []
+        let pessoas = 0
+        let x = 1
+
+        while (x != 0) {
+            x = parseInt(prompt("Digite sua idade" + "\n" + "Digite 0 para sair"));
+            if (x == 0) {
+                alert("Voce saiu da atividade")
+            }
+            else {
+                pessoas++;
+                idade.push(x);
+            }
+
+        }
+        contabilizarIdade(idade);
+
+    }
+    function contabilizarIdade(idade) {
+        let maioridade = 0
+        let menoridade = 0
+
+        for (let i = 0; i < idade.length; i++) {
+            if (idade[i] >= 18) {
+                maioridade++
+
+            } else {
+                menoridade++
+            }
+        }
+        alert("Numero de pessoas maiores de idade: " + maioridade + "\n" + "Numero de pessoas que são menores de idade: " + menoridade);
+    }
+     
 </script>
