@@ -4,7 +4,7 @@
     let media;
 
     do {
-    codigo = parseInt(prompt("Digite o código do aluno (ou um número negativo para sair): "));
+    codigo = parseInt(prompt("Digite o codigo do aluno (ou um numero negativo para sair): "));
     if (codigo < 0) break;
 
     nota1 = parseFloat(prompt("Digite a primeira nota do aluno: "));
@@ -16,9 +16,9 @@
 
     media = (notas[0] * 4 + notas[1] * 3 + notas[2] * 3) / 10;
 
-    alert("Código do aluno: " + codigo);
+    alert("Codigo do aluno: " + codigo);
     alert("Notas: " + nota1 + ", " + nota2 + ", " + nota3);
-    alert("Média: " + media.toFixed(2));
+    alert("Media: " + media.toFixed(2));
 
     if (media >= 5) {
         alert("APROVADO");
